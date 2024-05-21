@@ -1,0 +1,21 @@
+# Table of contents
+
+format: jb-book
+root: welcome
+chapters:
+  - file: Sections/Intro
+    title: Introduction
+  - file: Sections/Data-collection
+    title: Data Collection
+  - file: Sections/Method
+    title: Method
+  - file: Sections/Hyp
+    title: Hypothesis
+  - file: Sections/Control
+    title: Control
+  - file: Sections/Limit
+    title: Limitations
+  - file: Files/code
+    title: Code
+  - file: Sections/Data
+    title: Data
