@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Appendix 1: Code &#8212; CRT Assessment</title>
+    <title>Appendix 1 - Code &#8212; CRT Assessment</title>
   
   
   
@@ -160,15 +160,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../Sections/Intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Sections/Data-collection.html">Data Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Sections/Method.html">Method</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Sections/Hyp.html">Hypothesis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Sections/Control.html">Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sections/Hyp.html">Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sections/Correlations.html">Correlations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Sections/Limit.html">Limitations</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Appendix 1: Code</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Appendix 1 - Code</a></li>
 
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="../Sections/Data.html">Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sections/Data.html">Appendix 2 - Data</a></li>
 </ul>
 
     </div>
@@ -352,7 +352,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Appendix 1: Code</h1>
+    <h1>Appendix 1 - Code</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -362,7 +362,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Appendix 1: Code</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Appendix 1 - Code</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-import-and-cleaning">Data import and cleaning</a></li>
 </ul>
 </li>
@@ -383,7 +383,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="appendix-1-code">
-<h1>Appendix 1: Code<a class="headerlink" href="#appendix-1-code" title="Permalink to this heading">#</a></h1>
+<h1>Appendix 1 - Code<a class="headerlink" href="#appendix-1-code" title="Permalink to this heading">#</a></h1>
 <p>Here’s the code used to import, clean, and process the datasets.</p>
 <section id="data-import-and-cleaning">
 <h2>Data import and cleaning<a class="headerlink" href="#data-import-and-cleaning" title="Permalink to this heading">#</a></h2>
@@ -886,37 +886,37 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_82909/1541323171.py:71: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_83566/1541323171.py:71: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   df[&#39;Age&#39;] = df[&#39;Age&#39;].astype(int)
-/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_82909/1541323171.py:74: SettingWithCopyWarning: 
+/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_83566/1541323171.py:74: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   df[&#39;Age group&#39;] = pd.cut(df[&#39;Age&#39;], bins=bins, labels=labels, right=False)
-/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_82909/1541323171.py:75: SettingWithCopyWarning: 
+/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_83566/1541323171.py:75: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   df[&#39;Age group&#39;] = df[&#39;Age group&#39;].astype(str)
-/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_82909/1541323171.py:71: SettingWithCopyWarning: 
+/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_83566/1541323171.py:71: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   df[&#39;Age&#39;] = df[&#39;Age&#39;].astype(int)
-/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_82909/1541323171.py:74: SettingWithCopyWarning: 
+/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_83566/1541323171.py:74: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
 See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   df[&#39;Age group&#39;] = pd.cut(df[&#39;Age&#39;], bins=bins, labels=labels, right=False)
-/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_82909/1541323171.py:75: SettingWithCopyWarning: 
+/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_83566/1541323171.py:75: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -992,7 +992,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_82909/3286943314.py:4: SettingWithCopyWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/6q/ndqjw6ws3jx7kqy618mjsznc0000gn/T/ipykernel_83566/3286943314.py:4: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -2027,7 +2027,7 @@ t-test for Students whose Parents have No High School Degree: t-statistic = -3.0
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Appendix 1: Code</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Appendix 1 - Code</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-import-and-cleaning">Data import and cleaning</a></li>
 </ul>
 </li>
