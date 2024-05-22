@@ -10,9 +10,9 @@ chapters:
   - file: Sections/Method
     title: Method
   - file: Sections/Hyp
-    title: Hypothesis
-  - file: Sections/Control
-    title: Control
+    title: Test
+  - file: Sections/Correlations
+    title: Correlations
   - file: Sections/Limit
     title: Limitations
   - file: Files/code

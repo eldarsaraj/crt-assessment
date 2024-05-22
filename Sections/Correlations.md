@@ -35,10 +35,10 @@ We can see here that the male students improved more in the post survey than the
 
 Here's one more, this time scores by age:
 
-```{figure} ../Files/Charts/age.png
+```{figure} ../Files/Charts/age2.png
 ---
 height: 300px
-name: age
+name: age2
 ---
 Scores by age.
 ```
