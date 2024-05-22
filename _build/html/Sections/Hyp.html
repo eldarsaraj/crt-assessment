@@ -391,11 +391,12 @@ document.write(`
 <p><span class="caption-number">Fig. 3 </span><span class="caption-text">Scores distribution chart.</span><a class="headerlink" href="#scores-dist" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>So, the data in both surveys show that there is some weak improvement in students scores in the second survey, but that difference seems very small, a mere 0.5 points. Still, it could be meaningful.</p>
+<p>The data show that there is some weak improvement in students scores in the second survey, but that difference seems very small, a mere 0.5 points. Still, it could be meaningful.</p>
 <p>However, in order to make any such conclusion, we need to run a proper statistical analysis. In this section, I’ll conduct a basic hypothesis test and comment on the results.</p>
 <section id="hypothesis-test">
 <h2>Hypothesis test<a class="headerlink" href="#hypothesis-test" title="Permalink to this heading">#</a></h2>
 <p>With the null hypothesis being set to <span class="math notranslate nohighlight">\(H_0\)</span>: <em>There is no difference between the scores</em>, and the alternative hypothesis to <span class="math notranslate nohighlight">\(H_1\)</span>: <em>There is difference between the scores</em>, I ran a t-test, which measures if there is significant difference between the means of two sets of data.</p>
+<p>I assumed the data are normally distributed (reasonable assumption for student test data, confirmed somewhat visually too).</p>
 <p>I chose the two-sided test one to make it more stringent. One-sided test determines if there’s difference between two means <em>in only one direction</em> (whether the post survey scores are greater than the post survey), while the two sided one looks for <em>any difference</em> (for example, post scores could also be lower than the pre ones).</p>
 <p>The t-test is calculated by using the summary statistics (provided above) and the size of each dataset (245 in the case of pre survey and 113 in the case of the post survey).</p>
 <p>Te first step is calculating the <strong>standard error (SE)</strong>, which is given by the following formula:</p>

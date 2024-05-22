@@ -26,7 +26,9 @@ name: survey-completion
 Survey completion data.
 ```
 
-While the hope was that the selection of students would be random, making the sample as representative as possible, the self-selection aspect raises some doubts as to whether the results really reflect our student body. It is quite possible that the sample is skewed towards more responsible students, those who took the instructors' suggestions to fill in this (non-mandatory and non-graded) survey seriously. 
+While the hope was that the selection of students would be random, making the sample as representative as possible, the self-selection aspect raises some doubts as to whether the results really reflect our student body. 
+
+It is quite possible that the sample is skewed towards more responsible students, those who took the instructors' suggestions to fill in this (non-mandatory and non-graded) survey seriously. 
 
 Therefore, this should be borne in mind when intepreting the results.
 

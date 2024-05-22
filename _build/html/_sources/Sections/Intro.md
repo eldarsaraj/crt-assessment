@@ -11,7 +11,7 @@ One thing is true, regardless of which side of this debate one falls: there are 
 At BMCC, we've been teaching CRT for years and this academic year (2023/2024) we decided to collect some data to help us answer the this particular question: 
 
 ```{card}
-**Does taking a formal critical thinking course increase students' abilities to think critically?**
+**Does taking a critical thinking course increase students' abilities to think critically?**
 ```
 
 The following report is a result of this two-semester long project.

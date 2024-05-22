@@ -16,6 +16,6 @@ chapters:
   - file: Sections/Limit
     title: Limitations
   - file: Files/code
-    title: Code
+    title: Appendix 1 - Code
   - file: Sections/Data
-    title: Data
+    title: Appendix 2 - Data

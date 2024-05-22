@@ -15,13 +15,15 @@ name: scores-dist
 Scores distribution chart.
 ```
 
-So, the data in both surveys show that there is some weak improvement in students scores in the second survey, but that difference seems very small, a mere 0.5 points. Still, it could be meaningful.
+The data show that there is some weak improvement in students scores in the second survey, but that difference seems very small, a mere 0.5 points. Still, it could be meaningful.
 
 However, in order to make any such conclusion, we need to run a proper statistical analysis. In this section, I'll conduct a basic hypothesis test and comment on the results.
 
 ## Hypothesis test
 
 With the null hypothesis being set to $H_0$: *There is no difference between the scores*, and the alternative hypothesis to $H_1$: *There is difference between the scores*, I ran a t-test, which measures if there is significant difference between the means of two sets of data. 
+
+I assumed the data are normally distributed (reasonable assumption for student test data, confirmed somewhat visually too).
 
 I chose the two-sided test one to make it more stringent. One-sided test determines if there's difference between two means *in only one direction* (whether the post survey scores are greater than the post survey), while the two sided one looks for *any difference* (for example, post scores could also be lower than the pre ones).
 
