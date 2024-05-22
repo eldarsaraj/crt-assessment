@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Correlations and control &#8212; CRT Assessment</title>
+    <title>Correlations &#8212; CRT Assessment</title>
   
   
   
@@ -161,8 +161,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Data-collection.html">Data Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Method.html">Method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Hyp.html">Hypothesis</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Correlations and control</a></li>
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Limit.html">Limitations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Files/code.html">Appendix 1: Code</a></li>
 
@@ -340,9 +339,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -353,21 +350,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Correlations and control</h1>
+    <h1>Correlations</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Correlations and control</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#t-test-with-control">T-test with control</a></li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -377,42 +364,41 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="correlations-and-control">
-<h1>Correlations and control<a class="headerlink" href="#correlations-and-control" title="Permalink to this heading">#</a></h1>
-<p>Let’s see first if there’s any meaningful correlation between demographic variables and the score.</p>
-<p>I’ll plot it first so we can see it visually, and then I’ll calculate correlation for some of them if we see anything interesting.</p>
-<figure class="align-default" id="correlation">
-<a class="reference internal image-reference" href="../_images/correlation.png"><img alt="../_images/correlation.png" src="../_images/correlation.png" style="height: 600px;" /></a>
+  <section class="tex2jax_ignore mathjax_ignore" id="correlations">
+<h1>Correlations<a class="headerlink" href="#correlations" title="Permalink to this heading">#</a></h1>
+<p>Let’s see first if there’s any meaningful correlation between some demographic variables and the score.</p>
+<p>I’ll plot the most interesting one, so we can see it visually. For the ones not shown here, check the Appendix 1.</p>
+<p>First, let’s look at whether there is any difference between freshmen and sophomores.</p>
+<figure class="align-default" id="level">
+<a class="reference internal image-reference" href="../_images/level.png"><img alt="../_images/level.png" src="../_images/level.png" style="height: 300px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Scores by each variable.</span><a class="headerlink" href="#correlation" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Scores by level (Freshman or Sophomore).</span><a class="headerlink" href="#level" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Here we see that a few interesting things. First, it seems that male students had a better score in the post survey than the female ones. Similar difference in improvement is seen in students who work part-time, students with GPA of 3.0, and students who said they were ‘fairly motivated’ to learn critical thinking. Interestingly, the difference in improvement is the greatest in students whose parents don’t have high-school degree.</p>
-<p>The chart for age was to big to fit with the other ones, so I reproduce it below:</p>
-<figure class="align-default" id="age">
-<a class="reference internal image-reference" href="../_images/age.png"><img alt="../_images/age.png" src="../_images/age.png" style="height: 400px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Scores by age.</span><a class="headerlink" href="#age" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>The biggest difference in improvement here can be seen in two age groups, the 19-20 year olds, and 23-24 year olds. I’m not sure how relevant age is here, so I’ll try to control for these other variables and run a t-test again.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="t-test-with-control">
-<h1>T-test with control<a class="headerlink" href="#t-test-with-control" title="Permalink to this heading">#</a></h1>
-<p>Here are the results on the subsample selected on the basis of the criteria of higher correlation:</p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<ul class="simple">
-<li><p class="sd-card-text"><strong>Male Students</strong>: t-statistic = -1.79672, p-value = 0.074505</p></li>
-<li><p class="sd-card-text"><strong>Part-time Working Students</strong>: t-statistic = -2.46794, p-value = 0.014987</p></li>
-<li><p class="sd-card-text"><strong>Students with GPA 3.0</strong>: t-statistic = -3.0503, p-value = 0.00314</p></li>
-<li><p class="sd-card-text"><strong>Fairly Motivated Students</strong>: t-statistic = -3.0887, p-value = 0.002409</p></li>
-<li><p class="sd-card-text"><strong>Students whose Parents have No High School Degree</strong>: t-statistic = -3.0871, p-value = 0.00290</p></li>
-</ul>
+<p class="sd-card-text">In case you’re unfamiliar with the chart type, this one is called a <strong>box plot</strong> (or box and whiskers plot) and it is great for summarizing visually the distribution of a certain value. The box contains the middle 50% of the data, stretching from the 25th percentile (the bottom of the box) to the 75th percentile (the top of the box). The line in the middle of the box is the <strong>median</strong> value. If you can’t see the median, then it is either at the top or the bottom of the box (coinciding with 75th or 25th percentile).</p>
+<p class="sd-card-text">The whiskers extend down and up from the box, from the lowest (bottom whisker) to the highest (top whisker) value. Any diamond-shaped dots represent outliers, values far away from the median (extremely low or extremely high scores).</p>
 </div>
 </div>
-<p>We see here that, on average, we get a similar result as with the entire sample, but that the positive difference is greatest in some cases: students with high GPA, fairly motivated students, and students whose parents don’t have high-school degree. As a reminder, the t-statistic tells us how much the scores from pre and post surveys differ (the negative sign indicates that the pre score is lower).</p>
-<p>We might be tempted to conclude that teaching critical thinking to these students might make the most difference (and perhaps that’s correct), but I’d caution against rushing to that conclusion since the subsample this t-test was run on was even smaller than our original (already small) sample. Still, it might serve as interesting food for thought.</p>
+<p>In terms of student level, we see that both freshmen and sophomores have seen improvement in the score (the median is higher in the post survey box), but that there is more variance in the sophomore group (the box is longer).</p>
+<p>Let’s see gender now:</p>
+<figure class="align-default" id="gender">
+<a class="reference internal image-reference" href="../_images/gender.png"><img alt="../_images/gender.png" src="../_images/gender.png" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Scores by gender.</span><a class="headerlink" href="#gender" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We can see here that the male students improved more in the post survey than the female students.</p>
+<p>Here’s one more, this time scores by age:</p>
+<figure class="align-default" id="age">
+<a class="reference internal image-reference" href="../_images/age.png"><img alt="../_images/age.png" src="../_images/age.png" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Scores by age.</span><a class="headerlink" href="#age" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The biggest difference in improvement here can be seen in the 31-40 age group.</p>
+<p>While we can notice some interesting correlations, I don’t think we can conclude much from them at this point, so the purpose</p>
 <p>I’ll finish the report by discussing the limitations of this kind of research and proposing a few possible steps in the future.</p>
 </section>
 
@@ -474,22 +460,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Correlations and control</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#t-test-with-control">T-test with control</a></li>
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>

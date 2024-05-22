@@ -1,48 +1,50 @@
-# Correlations and control
+# Correlations
 
-Let's see first if there's any meaningful correlation between demographic variables and the score. 
+Let's see first if there's any meaningful correlation between some demographic variables and the score. 
 
-I'll plot it first so we can see it visually, and then I'll calculate correlation for some of them if we see anything interesting.
+I'll plot the most interesting one, so we can see it visually. For the ones not shown here, check the Appendix 1.
 
-```{figure} ../Files/Charts/correlation.png
+First, let's look at whether there is any difference between freshmen and sophomores.
+
+```{figure} ../Files/Charts/level.png
 ---
-height: 600px
-name: correlation
+height: 300px
+name: level
 ---
-Scores by each variable.
+Scores by level (Freshman or Sophomore).
 ```
 
-Here we see that a few interesting things. First, it seems that male students had a better score in the post survey than the female ones. Similar difference in improvement is seen in students who work part-time, students with GPA of 3.0, and students who said they were 'fairly motivated' to learn critical thinking. Interestingly, the difference in improvement is the greatest in students whose parents don't have high-school degree.
+```{card}
+In case you're unfamiliar with the chart type, this one is called a **box plot** (or box and whiskers plot) and it is great for summarizing visually the distribution of a certain value. The box contains the middle 50% of the data, stretching from the 25th percentile (the bottom of the box) to the 75th percentile (the top of the box). The line in the middle of the box is the **median** value. If you can't see the median, then it is either at the top or the bottom of the box (coinciding with 75th or 25th percentile).
 
-The chart for age was to big to fit with the other ones, so I reproduce it below:
+The whiskers extend down and up from the box, from the lowest (bottom whisker) to the highest (top whisker) value. Any diamond-shaped dots represent outliers, values far away from the median (extremely low or extremely high scores).
+```
+
+In terms of student level, we see that both freshmen and sophomores have seen improvement in the score (the median is higher in the post survey box), but that there is more variance in the sophomore group (the box is longer).
+
+Let's see gender now:
+
+```{figure} ../Files/Charts/gender.png
+---
+height: 300px
+name: gender
+---
+Scores by gender.
+```
+We can see here that the male students improved more in the post survey than the female students. 
+
+Here's one more, this time scores by age:
 
 ```{figure} ../Files/Charts/age.png
 ---
-height: 400px
+height: 300px
 name: age
 ---
 Scores by age.
 ```
+The biggest difference in improvement here can be seen in the 31-40 age group. 
 
-The biggest difference in improvement here can be seen in two age groups, the 19-20 year olds, and 23-24 year olds. I'm not sure how relevant age is here, so I'll try to control for these other variables and run a t-test again.
-
-# T-test with control
-
-Here are the results on the subsample selected on the basis of the criteria of higher correlation:
-
-```{card}
-
-- **Male Students**: t-statistic = -1.79672, p-value = 0.074505
-- **Part-time Working Students**: t-statistic = -2.46794, p-value = 0.014987
-- **Students with GPA 3.0**: t-statistic = -3.0503, p-value = 0.00314
-- **Fairly Motivated Students**: t-statistic = -3.0887, p-value = 0.002409
-- **Students whose Parents have No High School Degree**: t-statistic = -3.0871, p-value = 0.00290
-
-```
-
-We see here that, on average, we get a similar result as with the entire sample, but that the positive difference is greatest in some cases: students with high GPA, fairly motivated students, and students whose parents don't have high-school degree. As a reminder, the t-statistic tells us how much the scores from pre and post surveys differ (the negative sign indicates that the pre score is lower).
-
-We might be tempted to conclude that teaching critical thinking to these students might make the most difference (and perhaps that's correct), but I'd caution against rushing to that conclusion since the subsample this t-test was run on was even smaller than our original (already small) sample. Still, it might serve as interesting food for thought.
+While we can notice some interesting correlations, I don't think we can conclude much from them at this point, so the purpose
 
 I'll finish the report by discussing the limitations of this kind of research and proposing a few possible steps in the future.
 
