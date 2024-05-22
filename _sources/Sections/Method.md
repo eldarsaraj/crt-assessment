@@ -18,4 +18,4 @@ Both the pre- and the post-survey used *exactly* 11 thinking questions with the 
 
 Each question has a single correct answer, and each correct answer earns one point. All questions have the same point weight. The points are added and consist the total number of points per each student.
 
-The score for each of the surveys is calculated by taking the mean. The results are compared and analyzed using Neyman-Pierson two-sided hypothesis test, with the null hypothesis that there are no differences between the scores of the two surveys, and the standard p-value of 0.05. I chose the two-sided test since it is quite possible that the results in the second survey are worse than in the first one.
+The score for each of the surveys is calculated by taking the mean. The results are compared and analyzed using Neyman-Pierson two-sided hypothesis test, with the null hypothesis that there are no differences between the scores of the two surveys, and the standard p-value of 0.05. 

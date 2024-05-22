@@ -1,6 +1,8 @@
 # Correlations and control
 
-Let's see first if there's any meaningful correlation between demographic variables and the score. I'll plot it first so we can see it visually, and then I'll calculate correlation for some of them if we see anything interesting.
+Let's see first if there's any meaningful correlation between demographic variables and the score. 
+
+I'll plot it first so we can see it visually, and then I'll calculate correlation for some of them if we see anything interesting.
 
 ```{figure} ../Files/Charts/correlation.png
 ---
