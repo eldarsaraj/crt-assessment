@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Sections/Hyp';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Correlations and control" href="Control.html" />
+    <link rel="next" title="Correlations" href="Correlations.html" />
     <link rel="prev" title="Methodology" href="Method.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -162,16 +162,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Data-collection.html">Data Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Method.html">Method</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Hypothesis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Control.html">Correlations and control</a></li>
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Correlations.html">Correlations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Limit.html">Limitations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Files/code.html">Appendix 1: Code</a></li>
 
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="Data.html">Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data.html">Appendix 2 - Data</a></li>
 </ul>
 
     </div>
@@ -392,7 +391,7 @@ document.write(`
 </figcaption>
 </figure>
 <p>The data show that there is some weak improvement in students scores in the second survey, but that difference seems very small, a mere 0.5 points. Still, it could be meaningful.</p>
-<p>However, in order to make any such conclusion, we need to run a proper statistical analysis. In this section, I’ll conduct a basic hypothesis test and comment on the results.</p>
+<p>However, in order to make any such conclusion, we need to run a proper statistical analysis. In this section, I’ll conduct a basic hypothesis test and comment on the results. I’ll explain the methods and show the formulas, for clarity purposes.</p>
 <section id="hypothesis-test">
 <h2>Hypothesis test<a class="headerlink" href="#hypothesis-test" title="Permalink to this heading">#</a></h2>
 <p>With the null hypothesis being set to <span class="math notranslate nohighlight">\(H_0\)</span>: <em>There is no difference between the scores</em>, and the alternative hypothesis to <span class="math notranslate nohighlight">\(H_1\)</span>: <em>There is difference between the scores</em>, I ran a t-test, which measures if there is significant difference between the means of two sets of data.</p>
@@ -403,7 +402,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[ SE = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} \]</div>
 <p>Here, <span class="math notranslate nohighlight">\(s_1^2\)</span> is the square of the standard deviation of the first dataset (the pre survey), <span class="math notranslate nohighlight">\(s_2^2\)</span> is the same for the second dataset (post survey), and <span class="math notranslate nohighlight">\(n_1\)</span> and <span class="math notranslate nohighlight">\(n_2\)</span> are the sizes of the datasets.</p>
-<p>Then, we use the value of the standard error and plug it in the calculation of the <strong>t-statistic (t)</strong>, which is given by this formula:</p>
+<p>Then, we use the value of the standard error and plug it in the calculation of the <strong>t-statistic</strong>, which is given by this formula:</p>
 <div class="math notranslate nohighlight">
 \[ t = \frac{\bar{X}_1 - \bar{X}_2}{SE} \]</div>
 <p>Here, <span class="math notranslate nohighlight">\(SE\)</span> is the standard error, <span class="math notranslate nohighlight">\(\bar{X}_1\)</span> and <span class="math notranslate nohighlight">\(\bar{X}_2\)</span> are the mean score values of both groups. The t-statistic shows how much the two means differ from one another (relative to the variation within the samples). A large absolute value indicates larger difference between the means.</p>
@@ -411,12 +410,17 @@ document.write(`
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <ul class="simple">
-<li><p class="sd-card-text"><strong>T-statistic</strong>: -2.6683650770836427</p></li>
-<li><p class="sd-card-text"><strong>P-value</strong>: 0.007970787980641027</p></li>
+<li><p class="sd-card-text"><strong>t-statistic</strong>: -2.668</p></li>
+<li><p class="sd-card-text"><strong>p-value</strong>: 0.0079</p></li>
 </ul>
 </div>
 </div>
-<p>This shows that there is some small difference between the two means (the negative sign indicates that the score in the pre survey is lower than the score in the post survey). The t-statistics is somewhat ‘dimensionless’, it is not expressed in any predetermined units, so we cannot say that the difference between the two means is -2.66 (we see above that the difference is close to 0.5), but what we do get from it is a confirmation that there is some <em>statistically significant</em> (as indicated by the p-value of 0.0079) difference between the two scores.</p>
+<p>This shows that there is some small difference between the two means (the negative sign indicates that the score in the pre survey is lower than the score in the post survey). The t-statistics is somewhat ‘dimensionless’, it is not expressed in any predetermined units, so we cannot say that the difference between the two means is -2.668 (we see above that the difference is close to 0.5), but what we do get from it is a confirmation that there is some <em>statistically significant</em> (as indicated by the p-value of 0.0079) difference between the two scores.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">You can understand p-value as the probability that the difference between student scores in the pre and post survey happened by mere chance.</p>
+</div>
+</div>
 <p>So, we have sound statistical reasons to <strong>reject the null hypothesis and endorse the alternative one</strong>.</p>
 <p>Does that mean much?</p>
 <p>Well, <strong>yes</strong> and <strong>no</strong> (or not yet, at least). Provided that the surveys were sensitive to the signal enough, we have some evidence that the student critcal thinking abilities are better after a full-semester course in critical thinking. However weak, the signal says that something is making a dent.</p>
@@ -426,10 +430,10 @@ document.write(`
 <p>Here, <span class="math notranslate nohighlight">\({s_p}\)</span> is the pooled standard deviation (weighted average of the two surveys). Cohen’s d quantifies the difference between the two means in terms of standard deviations. So, it provides good indication of the magnitude of this difference.</p>
 <p>I got a result of:</p>
 <ul class="simple">
-<li><p><strong>Cohen’s d</strong>: 0.30124</p></li>
+<li><p><strong>Cohen’s d</strong>: 0.301</p></li>
 </ul>
 <p>This value could range anywhere from negative to positive infinity (it’s not to be interpreted in the same way as correlation, between -1 and 1) and shows us the amount of effect in either direction; the bigger the absolute value of the number, the bigger the effect. If it’s close to 0, it means very little or no effect.</p>
-<p>The meager value of 0.30124 tells us that this effect is not very large, it is smaller than one third of one standard deviation.</p>
+<p>The meager value of 0.301 tells us that this effect is not very large, it is smaller than one third of one standard deviation.</p>
 <p>We can see it visually if we plot the density of the scores:</p>
 <figure class="align-default" id="scores-density">
 <a class="reference internal image-reference" href="../_images/scores_dens.png"><img alt="../_images/scores_dens.png" src="../_images/scores_dens.png" style="height: 300px;" /></a>
@@ -438,8 +442,8 @@ document.write(`
 </figcaption>
 </figure>
 <p>So, there you have it: the results show weak improvement.</p>
-<p>There are a few other things we can do with the data. I’m curious to see if any of the demographic variables correlate with the results. Perhaps if we control for some of the variables, we get a larger effect?</p>
-<p>I’ll try out a few things in the next section.</p>
+<p>There are a few other things we can do with the data. I’m curious to see if any of the demographic variables correlate with the results.</p>
+<p>I’ll try out a few visualizations in the next section so we see that.</p>
 </section>
 </section>
 
@@ -484,11 +488,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="Control.html"
+       href="Correlations.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Correlations and control</p>
+        <p class="prev-next-title">Correlations</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
