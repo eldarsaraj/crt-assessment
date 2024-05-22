@@ -72,7 +72,7 @@ I got a result of:
 
 This value could range anywhere from negative to positive infinity (it's not to be interpreted in the same way as correlation, between -1 and 1) and shows us the amount of effect in either direction; the bigger the absolute value of the number, the bigger the effect. If it's close to 0, it means very little or no effect. 
 
-The meager value of 0.301 tells us that this effect is not very large, it is smaller than one third of one standard deviation.
+The meager value of 0.301 tells us that this effect is not very large, it is smaller than one third of one standard deviation. 
 
 We can see it visually if we plot the density of the scores:
 

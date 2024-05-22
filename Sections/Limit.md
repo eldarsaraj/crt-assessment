@@ -24,4 +24,4 @@ The biggest conceptual challenge in answering the question that interested us in
 
 Honestly, **I don't know**. I'd like to think that it can, and this report is my initial attempt to try doing so. Perhaps a more serious version of assessment could uncover some interesting findings. I'd also like to see more long-term effects of taking a critical thinking class in college. Do students who have taken CRT in college become better thinkers later in life?
 
-More data and research is needed, but this was a good start.
+More data and research is needed, but this was a good start. 

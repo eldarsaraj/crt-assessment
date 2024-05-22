@@ -4,6 +4,6 @@ This is a report on the assessment of *Critical Thinking, (CRT-100)*, at the Aca
 
 The author of the report is **Eldar Sarajlic**, Associate Professor. 
 
-For questions, write to esarajlic@bmcc.cuny.edu.
+For questions, write to esarajlic@bmcc.cuny.edu. 
 
 

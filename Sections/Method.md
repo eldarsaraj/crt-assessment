@@ -16,7 +16,7 @@ name: sample-question
 Example of a thinking question from the survey.
 ```
 
-Both the pre- and the post-survey used *exactly* 11 thinking questions with the *exactly same format* (with different questions) so that the comparison between their answers before and after taking the course could be meaningfully made.
+Both the pre- and the post-survey used *exactly* 11 thinking questions with the *exactly same format* (with different questions) so that the comparison between their answers before and after taking the course could be meaningfully made. 
 
 All questions but one had a single correct answer (one had two), and each correct answer earned one point. All questions had the same point weight. The points were added to make the total number of points per each student.
 
