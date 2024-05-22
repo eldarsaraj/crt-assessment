@@ -42,9 +42,9 @@ name: age2
 ---
 Scores by age.
 ```
-The biggest difference in improvement here can be seen in the 31-40 age group. 
+The biggest difference in improvement here can be seen in the 31-40 and 41+ age group. I guess older students are better?
 
-While we can notice some interesting correlations, I don't think we can conclude much from them at this point, so the purpose
+While we can notice some interesting correlations, I don't think we can conclude much from them at this point. At least, they may serve as points of departure for a discussion about the improvement of this study.
 
 I'll finish the report by discussing the limitations of this kind of research and proposing a few possible steps in the future.
 

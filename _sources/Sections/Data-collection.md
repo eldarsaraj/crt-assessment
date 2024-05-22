@@ -30,6 +30,6 @@ The surveys were given to students as links to the appropriate Google Form with 
 
 The hope was that the selection of students who completed the surveys would be random, making the sample as representative as possible. However, the **self-selection** aspect raises some doubts as to whether the results really reflect our student body. It is quite possible that the sample is skewed towards more responsible students, those who took the instructors' suggestions to fill in this (non-mandatory and non-graded) survey seriously. 
 
-Therefore, this should be borne in mind when intepreting the results.
+Therefore, this should be borne in mind when intepreting the results. 
 
 
