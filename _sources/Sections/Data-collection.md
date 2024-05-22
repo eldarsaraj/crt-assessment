@@ -26,9 +26,9 @@ name: survey-completion
 Survey completion data.
 ```
 
-While the hope was that the selection of students would be random, making the sample as representative as possible, the self-selection aspect raises some doubts as to whether the results really reflect our student body. 
+The surveys were given to students as links to the appropriate Google Form with a short deadline to complete them (usually a week or two). They were **not mandatory**, and students could opt out (and many of them did).
 
-It is quite possible that the sample is skewed towards more responsible students, those who took the instructors' suggestions to fill in this (non-mandatory and non-graded) survey seriously. 
+The hope was that the selection of students who completed the surveys would be random, making the sample as representative as possible. However, the **self-selection** aspect raises some doubts as to whether the results really reflect our student body. It is quite possible that the sample is skewed towards more responsible students, those who took the instructors' suggestions to fill in this (non-mandatory and non-graded) survey seriously. 
 
 Therefore, this should be borne in mind when intepreting the results.
 

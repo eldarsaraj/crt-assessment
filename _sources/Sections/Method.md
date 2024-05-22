@@ -1,10 +1,12 @@
 # Methodology
 
-The surveys ask two types of questions. 
+The surveys asked two types of questions. 
 
-First, there are **14 demographic questions**, aiming at getting a clearer picture of the student population, as well as allowing control for some variables of importance (such as high-school GPA, age, socio-economic status ... etc).
+First, there were **14 demographic questions**, aiming at getting a clearer picture of the student population, as well as allowing control for some variables of importance (such as gender, high-school GPA, age, socio-economic status ... etc).
 
-Second, there are **11 thinking questions** aiming to assess students' ability to think critically about aspects of reality. For example, students were given a statement and asked to identify the central claim (see Figure 2 for an example).
+Second, there were **11 thinking questions** aiming to assess students' ability to think critically about aspects of reality. These questions were the crux of the survey.
+
+For example, students were given a statement and asked to identify the central claim (see Figure 2).
 
 ```{figure} ../Files/sample_question.png
 ---
@@ -14,8 +16,8 @@ name: sample-question
 Example of a thinking question from the survey.
 ```
 
-Both the pre- and the post-survey used *exactly* 11 thinking questions with the *exactly same format* (with different questions, naturally) so that the comparison between their answers before and after taking the course could be meaningfully made.
+Both the pre- and the post-survey used *exactly* 11 thinking questions with the *exactly same format* (with different questions) so that the comparison between their answers before and after taking the course could be meaningfully made.
 
-Each question has a single correct answer, and each correct answer earns one point. All questions have the same point weight. The points are added and consist the total number of points per each student.
+All questions but one had a single correct answer (one had two), and each correct answer earned one point. All questions had the same point weight. The points were added to make the total number of points per each student.
 
-The score for each of the surveys is calculated by taking the mean. The results are compared and analyzed using Neyman-Pierson two-sided hypothesis test, with the null hypothesis that there are no differences between the scores of the two surveys, and the standard p-value of 0.05. 
+The score for each of the surveys was calculated by taking the mean. The results are compared and analyzed using Neyman-Pearson two-sided hypothesis test, with the null hypothesis that there is no difference between the scores of the two surveys, and the standard p-value of 0.05. 
