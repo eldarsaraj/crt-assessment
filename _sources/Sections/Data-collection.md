@@ -21,7 +21,6 @@ Out of these, **245** completed the pre-survey, while only **113** completed the
 height: 300px
 name: survey-completion
 ---
-Pre survey completion data.
 ```
 
 ```{figure} ../Files/Charts/completion_post.png
@@ -29,7 +28,6 @@ Pre survey completion data.
 height: 300px
 name: survey-completion2
 ---
-Post survey completion data.
 ```
 
 The surveys were given to students as links to the appropriate Google Form with a short deadline to complete them (usually a week or two). They were **not mandatory**, and students could opt out (and many of them did).
