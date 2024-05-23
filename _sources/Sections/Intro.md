@@ -14,5 +14,7 @@ At BMCC, we've been teaching CRT for years and this academic year (2023/2024) we
 **Does taking a critical thinking course increase students' thinking skills?**
 ```
 
-The following report is a result of this two-semester long project.
+As a philosopher and a professor of critical thinking, **I am personally invested** in finding an asnwer to this question. It is not just a academic matter - it cuts straight to my professional identity, and influences how I approach my work. I am sure other professors (and philosophers) feel the same.
+
+The following report is a result of a two-semester long project. I ran it as a side-activity, partly driven by my responsibility as a member of the assessment sub-committee within the Academic Literacy and Linguistics department (where I collaborated with Danesh Singh), and partly by my genuine interest in finding out if what I do on a daily basis has any effect on the people we serve: the students.
 

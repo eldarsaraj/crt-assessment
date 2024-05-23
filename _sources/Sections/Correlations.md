@@ -1,17 +1,15 @@
 # Correlations
 
-Let's see first if there's any meaningful correlation between some demographic variables and the score. 
+I'll plot the most interesting correlations, so we can see them visually. For the ones not shown here, check Appendix 1.
 
-I'll plot the most interesting one, so we can see it visually. For the ones not shown here, check the Appendix 1.
-
-First, let's look at whether there is any difference between freshmen and sophomores.
+First, let's look at whether there is any difference in scores between freshmen and sophomores.
 
 ```{figure} ../Files/Charts/level.png
 ---
 height: 300px
 name: level
 ---
-Scores by level (Freshman or Sophomore).
+Scores by level (freshman or sophomore).
 ```
 
 ```{card}
@@ -31,7 +29,9 @@ name: gender
 ---
 Scores by gender.
 ```
-We can see here that the male students improved more in the post survey than the female students. 
+We can see here that the male students improved more in the post survey than the female students. Two female students had an extremely low score (it's quite possible that they haven't answered all the questions). There was only one non-binary student, who improved the score in the post-survey (indicated by two horizontal lines in the right part of the chart).
+
+This one is quite surprising to me. My in-class experience in the past several years would tell me that female students are better (at least the ones taking my course) overall, but I guess that may not be true. I'd like to see more data about this, definitely.
 
 Here's one more, this time scores by age:
 
@@ -42,7 +42,7 @@ name: age2
 ---
 Scores by age.
 ```
-The biggest difference in improvement here can be seen in the 31-40 and 41+ age group. I guess older students are better?
+The biggest difference in improvement here can be seen in the < 20, 31-40 and 41+ age group. I don't know how to interpret this, honestly. I did notice that older students are usually more responsible and, perhaps that explains the result here, but it could be the case that the small number of older students here is not representative enough.
 
 While we can notice some interesting correlations, I don't think we can conclude much from them at this point. At least, they may serve as points of departure for a discussion about the improvement of this study.
 
