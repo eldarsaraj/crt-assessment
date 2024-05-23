@@ -27,3 +27,9 @@ Honestly, **I don't know**. I'd like to think that it can, and this report is my
 I'd also like to see more long-term effects of taking a critical thinking class in college. Do students who have taken CRT in college become better thinkers later in life? Is this possible to measure? Perhaps, but not as a side project of a community college professor with a 4/4 teaching load.
 
 More data and research is needed, but this was a good start. I thank everybody who helped by encouraging their students to complete the surveys.
+
+Cheers, 
+
+Eldar
+
+PS. If you'd like to see/verify the code and the computation behind the analysis, check Appendix 1. To download original datasets, check Appendix 2.
