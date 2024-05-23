@@ -64,7 +64,7 @@ So, we have sound statistical reasons to **reject the null hypothesis and endors
 
 Does that mean much?
 
-Well, **yes** and **no** (or not yet, at least). Provided that the surveys were sensitive to the signal enough, we have some evidence that the student critcal thinking abilities are better after a full-semester course in critical thinking. However weak, the signal says that something is making a dent.
+Well, **yes** and **no** (or not yet, at least). Provided that the surveys were sensitive to the signal enough, we have some evidence that the student critical thinking abilities are better after a full-semester course in critical thinking. However weak, the signal says that something is making a dent.
 
 However, the signal *is* weak, no doubt. To determine just how weak, I used a statistic called **Cohen's d**, given by this formula:
 
