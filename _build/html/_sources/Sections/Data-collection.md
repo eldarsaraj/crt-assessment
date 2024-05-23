@@ -16,8 +16,6 @@ In the two semesters combined, there were **1,518** students enrolled in **105**
 
 Out of these, **245** completed the pre-survey, while only **113** completed the post-survey.
 
-
-
 ```{figure} ../Files/Charts/completion_pre.png
 ---
 height: 300px

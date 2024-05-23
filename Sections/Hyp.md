@@ -2,8 +2,8 @@
 
 Here are the basic summary statistics for each survey:
 
-- The mean score of the pre survey is **6.2** and the mean score of the post survey is **6.6902**;
-- Standard deviation of the pre survey is **1.595** and of the post survey is **1.658**.
+- The mean score of the pre survey is **6.2** and the mean score of the post survey is **6.7**;
+- Standard deviation of the pre survey is **1.59** and of the post survey is **1.65**.
 
 Here's a visual representation:
 
@@ -15,9 +15,13 @@ name: scores-dist
 Scores distribution chart.
 ```
 
-The data show that there is some weak improvement in students scores in the second survey, but that difference seems very small, a mere 0.5 points. Still, it could be meaningful.
+The data show that there is some **weak improvement** in students scores in the second survey, but that difference seems very small, a mere 0.5 points. 
 
-However, in order to make any such conclusion, we need to run a proper statistical analysis. In this section, I'll conduct a basic hypothesis test and comment on the results. I'll explain the methods and show the formulas, for clarity purposes.
+Still, it could be meaningful.
+
+However, in order to make any such conclusion, we need to run a proper statistical analysis. In this section, I'll conduct a basic hypothesis test and comment on the results. 
+
+I'll explain the methods and show the formulas, for clarity purposes. Understanding the formulas is not necessary, but it is helpful for gaining some insight about the statistical/mathematical bedrock of the claims made.
 
 ## Hypothesis test
 
@@ -27,15 +31,17 @@ I assumed the data are normally distributed (reasonable assumption for student t
 
 I chose the two-sided test one to make it more stringent. One-sided test determines if there's difference between two means *in only one direction* (whether the post survey scores are greater than the post survey), while the two sided one looks for *any difference* (for example, post scores could also be lower than the pre ones).
 
-The t-test is calculated by using the summary statistics (provided above) and the size of each dataset (245 in the case of pre survey and 113 in the case of the post survey).
+The t-test is calculated by using the **two summary statistics** (the mean, and the standard deviation, provided above) and the size of each dataset ($n = 245$ in the case of pre survey and $n = 113$ in the case of the post survey).
 
-Te first step is calculating the **standard error (SE)**, which is given by the following formula:
+The first step is calculating the **standard error (SE)**, which is given by the following formula:
 
 $$ SE = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}} $$
 
 Here, $s_1^2$ is the square of the standard deviation of the first dataset (the pre survey), $s_2^2$ is the same for the second dataset (post survey), and $n_1$ and $n_2$ are the sizes of the datasets.
 
-Then, we use the value of the standard error and plug it in the calculation of the **t-statistic**, which is given by this formula:
+Standard error is a valuable statistic in its own right because it tells us how precisely can we expect the sample mean (the existing score of the two surveys) to estimate the population mean (the unknown score average of all students who could have taken the survey). If it's close to 1, then the estimate is far away; if it is close to 0, then it is not. Our standard error in this case is 0.18, which indicates that the estimate might be good (provided that the sample is representative enough).
+
+However, the main reason we need standard error here is to plug it in the calculation of the **t-statistic**, the main value we're interested here. This statistic is given by this formula:
 
 $$ t = \frac{\bar{X}_1 - \bar{X}_2}{SE} $$
 
@@ -64,7 +70,7 @@ However, the signal *is* weak, no doubt. To determine just how weak, I used a st
 
 $$ d = \frac{\bar{X}_1 - \bar{X}_2}{s_p} $$
 
-Here, ${s_p}$ is the pooled standard deviation (weighted average of the two surveys). Cohen's d quantifies the difference between the two means in terms of standard deviations. So, it provides good indication of the magnitude of this difference.
+Here, ${s_p}$ is the pooled standard deviation (weighted average of the two surveys). Cohen's d quantifies the difference between the two means in terms of standard deviations. So, it provides good indication of the **magnitude of this difference**.
 
 I got a result of:
 
@@ -84,7 +90,7 @@ name: scores-density
 Density chart.
 ```
 
-So, there you have it: the results show weak improvement. 
+So, there you have it: the results show weak improvement. As much as I'd like to interpret it as a relief (knowing all my teaching effors are not totally in vain), I remain cautious, since none of this is a definite truth.
 
 There are a few other things we can do with the data. I'm curious to see if any of the demographic variables correlate with the results. 
 
