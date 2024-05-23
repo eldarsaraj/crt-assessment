@@ -18,12 +18,20 @@ Out of these, **245** completed the pre-survey, while only **113** completed the
 
 
 
-```{figure} ../Files/Charts/survey-completion.png
+```{figure} ../Files/Charts/completion_pre.png
 ---
-height: 250px
+height: 300px
 name: survey-completion
 ---
-Survey completion data.
+Pre survey completion data.
+```
+
+```{figure} ../Files/Charts/completion_post.png
+---
+height: 300px
+name: survey-completion2
+---
+Post survey completion data.
 ```
 
 The surveys were given to students as links to the appropriate Google Form with a short deadline to complete them (usually a week or two). They were **not mandatory**, and students could opt out (and many of them did).
